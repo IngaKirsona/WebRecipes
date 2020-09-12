@@ -64,11 +64,11 @@
 				7AFF5587250D350800A9807F /* SceneDelegate.swift */,
 				7AFF558B250D350800A9807F /* Main.storyboard */,
 				7AFF559C250D3ADA00A9807F /* ListTableViewController.swift */,
+				7AFF559E250D3B4800A9807F /* WebViewController.swift */,
 				7AFF5591250D350900A9807F /* Assets.xcassets */,
 				7AFF5593250D350900A9807F /* LaunchScreen.storyboard */,
 				7AFF5596250D350A00A9807F /* Info.plist */,
 				7AFF558E250D350800A9807F /* WebRecipes.xcdatamodeld */,
-				7AFF559E250D3B4800A9807F /* WebViewController.swift */,
 			);
 			path = WebRecipes;
 			sourceTree = "<group>";

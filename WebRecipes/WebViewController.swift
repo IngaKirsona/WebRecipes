@@ -17,7 +17,6 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     
     
     override func loadView() {
-        self.title = "WebView"
         webView = WKWebView()
         webView.navigationDelegate = self
         view = webView

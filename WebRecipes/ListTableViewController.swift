@@ -25,9 +25,8 @@ class ListTableViewController: UITableViewController {
   
 
 
-
+//-------> count the rows
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return recipesList.count
     }
 
@@ -36,15 +35,14 @@ class ListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "webCell", for: indexPath)
 
         cell.textLabel?.text = recipesList[indexPath.row]
-//------->to allow rows as many needed
+//-------> to allow rows as many needed
         cell.textLabel?.numberOfLines = 0
-        
-
-        return cell
+         return cell
     }
-    
+//-------> when clicked on row, navigate to webViewController
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//-------> to access vebWieController and asign passedValue to recipiesList
         let vc: WebViewController = storyBoard.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
         vc.passedValue = recipesList[indexPath.row]
         self.present(vc, animated: true)
@@ -59,7 +57,7 @@ class ListTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
@@ -69,7 +67,7 @@ class ListTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
