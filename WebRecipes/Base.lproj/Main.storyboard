@@ -39,7 +39,14 @@
                             <outlet property="delegate" destination="jO1-GA-qVL" id="Gbe-Tu-xka"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="RecipesWeb" id="a7J-5n-MKi"/>
+                    <navigationItem key="navigationItem" title="RecipesWeb" id="a7J-5n-MKi">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="5aU-pE-mRG">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="addButtonTapped:" destination="jO1-GA-qVL" id="lJx-Yg-E1h"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DbC-AJ-ZAL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
